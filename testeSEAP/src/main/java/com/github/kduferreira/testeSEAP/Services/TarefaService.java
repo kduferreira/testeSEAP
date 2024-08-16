@@ -33,12 +33,16 @@ public class TarefaService {
                 .collect(Collectors.toList());
     }
 
-    @Transactional
-    public Tarefa save (Tarefa tarefa){
+  @Transactional
+   public Tarefa save (Tarefa tarefa){
 
-        tarefa.setStatus(Status.PEDENTE);
-        return tarefaRepository.save(tarefa);
-    }
+      tarefa.setStatus(Status.PEDENTE);
+      return tarefaRepository.save(tarefa);
+  }
+
+
+
+
 
     @Transactional
     public void deletar (Long id){

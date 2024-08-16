@@ -22,7 +22,7 @@ public class Tarefa {
 
 
 
-
+    @JsonProperty(access = JsonProperty.Access.READ_WRITE)
     @Enumerated(EnumType.STRING)
     private Status status;
 
